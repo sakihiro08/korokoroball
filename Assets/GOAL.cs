@@ -6,7 +6,10 @@ public class GOAL : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Goal");
+        if (other.gameObject.tag=="GOAL")
+        {
+            Debug.Log("Goal");
+        }
     }
     // Start is called before the first frame update
     void Start()
