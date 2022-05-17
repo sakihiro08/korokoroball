@@ -2,14 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GOAL : MonoBehaviour
+public class GameMnager : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-       
-            Debug.Log("Goal");
-       }
-    
     // Start is called before the first frame update
     void Start()
     {
