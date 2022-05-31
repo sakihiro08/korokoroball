@@ -8,6 +8,7 @@ public class GAMEMANAGER : MonoBehaviour
     private void Start()
     {
         coinCount = 0;
+        Application.targetFrameRate = 60;
     }
     public void sceneReset()
         {

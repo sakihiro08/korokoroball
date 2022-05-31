@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class coin : MonoBehaviour
 {
     public GAMEMANAGER gamemanager;
-         public AudioSource audioSource;
+    public AudioSource audioSource;
     private void Start()
     {
         GameObject managerObject = GameObject.Find("GAMEMANAGER");
@@ -15,11 +15,11 @@ public class Coin : MonoBehaviour
     {
         audioSource.Play();
         if (other.gameObject.tag == "Player")
-            {
-             gamemanager.AddcoinCount();
-                Destroy(gameObject);
-   
+        {
+            gamemanager.AddcoinCount();
+            Destroy(gameObject);
+
         }
-        
+
     }
 }
